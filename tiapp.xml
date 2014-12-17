@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-api-key-production" type="string">gifzG0GtaSyx7vD8vC1ajZdtDh1LRxK7</property>
+     <property name="ti.facebook.appid">400760656744309</property>
+
+    <property name="acs-api-key-development" type="string">m5gWYV9qeuDwREQnvPjJ6XeTMQXK7jEO</property>
+    <id>rutanavidena.cristiangarcia.co</id>
+    <name>Ruta Navideña</name>
+    <version>1.0</version>
+    
+    <publisher>cristiancamilo</publisher>
+    <url>http://</url>   
+    <description/>
+    <copyright>2014 by cristiancamilo</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>bba6bd16-bccb-4327-9c39-340604cb256c</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16"/>
+            <!-- Allows the API to download data from Google Map servers -->
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <!-- Allows the API to cache data -->
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <!-- Use GPS for device location -->
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+            <!-- Use Wi-Fi or mobile connection for device location -->
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            <!-- Allows the API to access Google web-based services -->
+            <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+            <!-- Specify OpenGL ES 2.0 as a requirement -->
+            <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+            <!-- Replace com.domain.appid with your application ID -->
+            <uses-permission android:name="rutanavidena.cristiangarcia.co.permission.MAPS_RECEIVE"/>
+            <permission
+                android:name="rutanavidena.cristiangarcia.co.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+            <application android:theme="@style/Theme.NoActionBar">
+                <!-- Replace "PASTE YOUR GOOGLE MAPS API KEY HERE" with the Google API key you obtained -->
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBihNvDIWtzy1QkTBvgCMnTMVtzL7dPGag"/>
+            </application>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
+        <module platform="android">facebook</module>
+        <module platform="iphone">facebook</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>3.4.1.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+</ti:app>

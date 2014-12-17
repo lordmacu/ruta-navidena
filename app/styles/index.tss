@@ -1,0 +1,31 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+"#label": {
+	font: {
+		fontSize: 12
+	}
+}
+
+"#mapview" : {
+    region : {
+        latitude:4.6750049,
+        longitude:-74.0662679,
+        latitudeDelta:0.15,
+        longitudeDelta:0.15
+    }
+},
+"#appcHQ" : {
+    latitude: 37.390749,
+    longitude: -122.081651,
+    title: "Appcelerator Headquarters",
+    subtitle: "Mountain View, CA",
+    pincolor: Alloy.Globals.Map.ANNOTATION_RED
+}
