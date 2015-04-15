@@ -1,9 +1,42 @@
 <Alloy>
-	<Window class="container">
+	<Window class="container" fullscreen="true">
 
-		<Module id="mapview" module="ti.map" method="createView" onClick="report">
-       
-        </Module>
+		<Module id="mapview" module="ti.map" method="createView" onClick="report"></Module>
+		<View id="logueofacebookcontenedor" width="100%" height="100%" layout="vertical" zIndex="1000">
+			<ImageView width="100%" top="50dp"  image="/img/logo.png" onClick="cerrar"></ImageView>
+			<Button top="50dp" id="botonfacebook" onClick="loguinface">Entrar con facebook</Button>
+		</View>
+		<View width="100%" height="100%" id="contenedorsegundario" bottom="0" backgroundColor="red" >
+			<View id="contenedorprueba" bottom="30dp" backgroundColor="#F7F7F7" >
+				<View id="cabeceralayiout" backgroundColor="#F3F6F8" zIndex="1000" top="0" height="40dp" onClick="ocultarviewcontelayout">
+					<Label id="quiequiereshacer">Cerrar</Label>
+				</View>
+				<View id="contenidolayoiut" bottom="0" height="90%">
 
+					<View id="contenedoreventos" top="0" backgroundColor="red" height="375dp" left="-9000">
+						<Label>eventos</Label>
+					</View>
+					<View id="contenedorsocial" top="0" backgroundColor="blue" height="375dp" left="-9000">
+						<Label>social</Label>
+					</View>
+				
+					
+					
+					<View id="tabstion" backgroundColor="#F7F7F7" bottom="0" height="120dp">
+						<View id="tabuno" onClick="eventos">
+							<Label class="titulotab">EVENTOS</Label>
+						</View>
+						<View id="tabdos" onClick="social">
+							<Label class="titulotab">FOTOS</Label>
+						</View>
+						<View id="tabtres" onClick="mapa"cli>
+							<Label class="titulotab">MAPA</Label>
+						</View>
+					</View>
+
+				</View>
+
+			</View>
+		</View>
 	</Window>
 </Alloy>

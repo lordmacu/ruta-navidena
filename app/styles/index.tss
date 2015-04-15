@@ -21,11 +21,61 @@
         latitudeDelta:0.15,
         longitudeDelta:0.15
     }
-},
-"#appcHQ" : {
-    latitude: 37.390749,
-    longitude: -122.081651,
-    title: "Appcelerator Headquarters",
-    subtitle: "Mountain View, CA",
-    pincolor: Alloy.Globals.Map.ANNOTATION_RED
+}
+
+"#botonfacebook":{
+	backgroundColor:"#4B66A0",
+	color:"white"
+}
+
+"#contenedorprueba":{
+	height:"100dp",
+	borderColor:"gray",
+	borderWidth:1,
+	bottom:"50dp",
+	backgroundColor:"#fff",
+	width:"95%"
+	
+}
+
+"#tabuno":{
+	width:"33%",
+	left:0,
+	backgroundColor:"white"
+}
+
+
+"#contenedoreventos":{
+	backgroundColor:"white"
+}
+
+".titulotab":{
+	font: {
+		fontSize: 15,
+		fontWeight: 'bold'
+	}
+}
+
+".descripciontab":{
+	font: {
+		fontSize: 9,
+	}
+}
+
+"#tabdos":{ 
+	width:"33%",
+		backgroundColor:"white"
+
+}
+
+"#tabtres":{
+	width:"33%",
+	right:0,
+		backgroundColor:"white"
+
+}
+
+
+"#logueofacebookcontenedor":{
+	backgroundColor:"black"
 }

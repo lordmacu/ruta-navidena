@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <property name="acs-api-key-production" type="string">gifzG0GtaSyx7vD8vC1ajZdtDh1LRxK7</property>
-     <property name="ti.facebook.appid">400760656744309</property>
-
+    <property name="ti.facebook.appid">400760656744309</property>
     <property name="acs-api-key-development" type="string">m5gWYV9qeuDwREQnvPjJ6XeTMQXK7jEO</property>
     <id>rutanavidena.cristiangarcia.co</id>
     <name>Ruta Navideña</name>
     <version>1.0</version>
-    
     <publisher>cristiancamilo</publisher>
-    <url>http://</url>   
-    <description/>
+    <url>http://</url>
+    <description>undefined</description>
     <copyright>2014 by cristiancamilo</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
